@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Catálogo de Laptops</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #dae4d7;
+            color: #151510;
+        }
+
+        header {
+            background-color: #18bd31;
+            color: #040309;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 2em;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        .laptop-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .laptop-card {
+            background-color: #10b4d0;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .laptop-card img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .laptop-card h2 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        .laptop-card ul {
+            list-style-type: none;
+            margin-top: 10px;
+            text-align: left;
+        }
+
+        .laptop-card li {
+            margin-bottom: 8px;
+        }
+
+        .laptop-details {
+            text-align: left;
+            margin-top: 20px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #d73313;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+
+        /* Para alinear todas las tarjetas */
+        .laptop-card {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Catálogo de Laptops</h1>
+    </header>
+    
+    <main>
+        <section class="laptop-grid">
+            <div class="laptop-card">
+                <h2>Laptop 1</h2>
+                <img src="laptop1.png" alt="Laptop 1">
+                <div class="laptop-details">
+                    <ul>
+                        <li><strong>Procesador:</strong> Intel Core i7</li>
+                        <li><strong>Memoria RAM:</strong> 16GB</li>
+                        <li><strong>Almacenamiento:</strong> 512GB SSD</li>
+                        <li><strong>Pantalla:</strong> 15.6" Full HD</li>
+                        <li><strong>Precio:</strong> $1200</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="laptop-card">
+                <h2>Laptop 2</h2>
+                <img src="laptop2.png" alt="Laptop 2">
+                <div class="laptop-details">
+                    <ul>
+                        <li><strong>Procesador:</strong> AMD Ryzen 5</li>
+                        <li><strong>Memoria RAM:</strong> 8GB</li>
+                        <li><strong>Almacenamiento:</strong> 256GB SSD</li>
+                        <li><strong>Pantalla:</strong> 14" Full HD</li>
+                        <li><strong>Precio:</strong> $800</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="laptop-card">
+                <h2>Laptop 3</h2>
+                <img src="laptop3.png" alt="Laptop 3">
+                <div class="laptop-details">
+                    <ul>
+                        <li><strong>Procesador:</strong> Intel Core i5</li>
+                        <li><strong>Memoria RAM:</strong> 8GB</li>
+                        <li><strong>Almacenamiento:</strong> 1TB HDD</li>
+                        <li><strong>Pantalla:</strong> 17.3" HD</li>
+                        <li><strong>Precio:</strong> $900</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="laptop-card">
+                <h2>Laptop 4</h2>
+                <img src="laptop4.png" alt="Laptop 4">
+                <div class="laptop-details">
+                    <ul>
+                        <li><strong>Procesador:</strong> Intel Core i3</li>
+                        <li><strong>Memoria RAM:</strong> 4GB</li>
+                        <li><strong>Almacenamiento:</strong> 128GB SSD</li>
+                        <li><strong>Pantalla:</strong> 13.3" Full HD</li>
+                        <li><strong>Precio:</strong> $600</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="laptop-card">
+                <h2>Laptop 5</h2>
+                <img src="laptop5.png" alt="Laptop 5">
+                <div class="laptop-details">
+                    <ul>
+                        <li><strong>Procesador:</strong> Apple M1</li>
+                        <li><strong>Memoria RAM:</strong> 8GB</li>
+                        <li><strong>Almacenamiento:</strong> 256GB SSD</li>
+                        <li><strong>Pantalla:</strong> 13.3" Retina</li>
+                        <li><strong>Precio:</strong> $1300</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Catálogo de Laptops</p>
+    </footer>
+
+    <tr>
+        <td colspan="6" height="65px" align="center" bgcolor="#6C3483">
+        <p><b>Uriel Rosales Parrazal</p></b>
+        <p>ASIGNATURA: PROGRAMACIÓN WEB ISC Grupo "B"</p>
+        </td> <br>
+      </tr>
+
+      <td colspan="12" height="85px" align="center" bgcolor="#6C3483">
+        <p><b>Consejos para adquirir una Laptop</p></b>
+        </td>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/KO2lF0GuM8U?si=204lKIastPJp6B3b"
+
+      
+</body>
+</html>
